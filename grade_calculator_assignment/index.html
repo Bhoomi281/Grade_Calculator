@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>GRADING SYSTEM ASSIGNMENT</h1>
+      <div class="left">
+        <h3>Grading System in JS</h3>
+        <form class="form">
+          <div>
+            <label
+              >English
+              <input id="one" type="number" onchange="handleChange(this)" />
+            </label>
+          </div>
+          <div>
+            <label
+              >Maths
+              <input type="number" id="two" onchange="handleChange(this)" />
+            </label>
+          </div>
+          <div>
+            <label
+              >Physics
+              <input type="number" id="three" onchange="handleChange(this)" />
+            </label>
+          </div>
+          <div>
+            <label
+              >Computer
+              <input type="number" id="four" onchange="handleChange(this)" />
+            </label>
+          </div>
+          <div>
+            <button onclick=" return Calculate()">Caluclate Grade</button>
+          </div>
+        </form>
+      </div>
+      <div class="right">
+        <table>
+          <tr>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td id="totalmarks"></td>
+          </tr>
+          <tr>
+            <th>Average</th>
+          </tr>
+          <tr>
+            <td id="average"></td>
+          </tr>
+          <tr>
+            <th>Grade</th>
+          </tr>
+          <tr>
+            <td id="grade"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
